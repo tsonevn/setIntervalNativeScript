@@ -1,0 +1,15 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd" loaded="onPageLoaded">
+<GridLayout rows="auto, *">
+<Button text="Test set Interval" tap="onTap" row="0"/>
+
+    <ListView id="listview" items="{{ myItems }}" row="1">
+            <ListView.itemTemplate>
+                <StackLayout orientation="horizontal">
+                <Label text="{{ title }}" />
+                <Image src="{{ src }}" stretch="none" />
+                </StackLayout>
+            </ListView.itemTemplate>
+    </ListView>
+</GridLayout>
+        
+</Page>
